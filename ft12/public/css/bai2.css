@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #F3F6FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.careers-section {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+
+  .title {
+    font-size: 28px;
+    color: #1E2246;
+    margin-bottom: 50px;
+    font-weight: 700;
+  }
+
+  .jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 60px;
+
+    .job-card {
+      background: #ffffff;
+      padding: 50px 40px;
+      border-radius: 16px;
+      box-shadow: 0px 24px 44px 0px #B4BFE166;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+
+      .job-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 25px;
+        width: 100%;
+        justify-content: center;
+        color: #1E2246;
+
+        .icon-wrapper {
+          width: 45px;
+          height: 45px;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+        }
+      }
+
+      .job-status {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #C2C5E2;
+        background: #ffffff;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.2s;
+      }
+    }
+
+    .job-card.active .job-status {
+      background-color: #1E2246;
+      color: #ffffff;
+      border-color: #C2C5E2;
+    }
+
+    .icon-design {
+      background: linear-gradient(131.94deg, #BBCBFB 5.22%, #F1D5FF 100.41%);
+    }
+
+    .icon-eng {
+      background: linear-gradient(131.94deg, #FBBBDA 5.22%, #FFD5D5 100.41%);
+    }
+
+    .icon-ops {
+      background: linear-gradient(131.94deg, #BBEBFB 5.22%, #EFD5FF 100.41%);
+
+    }
+
+    .icon-people {
+      background: linear-gradient(131.94deg, #BBFBE4 5.22%, #D5E0FF 100.41%);
+    }
+
+    .icon-sales {
+      background: linear-gradient(131.94deg, #BBD8FB 5.22%, #FFD5D5 100.41%);
+    }
+
+    .icon-uni {
+      background: linear-gradient(131.94deg, #FFDEC7 5.22%, #D5D9FF 100.41%);
+    }
+
+    .job-name {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .disclaimer-text {
+    max-width: 612px;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #1E2246;
+    opacity: 0.7;
+
+  }
+}
