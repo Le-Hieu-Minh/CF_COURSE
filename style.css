@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+
+.main-title {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.75px;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+
+.notification-list .notify-box {
+  padding: 32px;
+  margin-bottom: 20px;
+
+}
+
+.status-urgent {
+  border: 1px solid #E5484D;
+  border-radius: 10px;
+}
+
+.status-info {
+  border: 1px solid #3E9AD8;
+  border-radius: 10px;
+}
+
+.status-promo {
+  border: 1px solid #F59E0B;
+  border-radius: 10px;
+}
+
+.status-urgent .label {
+  font-weight: 700;
+
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #E5484D;
+}
+
+.status-info .label {
+  font-weight: 700;
+
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #3E9AD8;
+}
+
+.status-promo .label {
+  font-weight: 700;
+
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #F59E0B;
+}
+
+.notify-boxt .box-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  line-height: 28px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+
+.notify-boxt .box-desc {
+
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 15px;
+  color: #4D4D4D;
+  line-height: 24.38px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+
+}
+
+button {
+  padding: 10px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+
+  .btn-detail: {}
+}
