@@ -6,8 +6,12 @@
 }
 
 body {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #F3F8FF;
-  position: relative;
+  height: 100vh;
 }
 
 .container {
@@ -15,7 +19,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #F3F8FF;
-  height: 100vh;
+
   position: relative;
 }
 
@@ -26,34 +30,33 @@ body {
   height: 495.598px;
   transform: rotate(80.589deg);
   position: absolute;
+  top: -32px;
+  left: 80px;
   border-radius: 495.598px;
   background: linear-gradient(180deg, #DCD9FF 0%, #F5FFF4 100%);
   filter: blur(72px);
   z-index: 1;
 
-
 }
 
 .container::after {
   content: "";
-
   position: absolute;
+  top: -140px;
+  right: 100px;
   width: 670.98px;
   height: 670.98px;
   transform: rotate(-27.752deg);
   border-radius: 670.98px;
   background: linear-gradient(180deg, #C9FFEF 0%, #E5DFFF 100%);
   filter: blur(72px);
-
   z-index: 1;
-
 
 }
 
 
 .navbar-container {
-  width: 100%;
-  max-width: 1255px;
+  width: 1255px;
   height: 178px;
   padding: 15px;
   margin: 0 auto;

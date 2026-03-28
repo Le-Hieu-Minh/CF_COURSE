@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      display: grid;
+      height: 100vh;
+      gap: 10px;
+      padding: 10px;
+      background-color: #fff;
+
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 80px 50px 1fr 100px;
+
+      .header {
+        grid-column: 1/3;
+        /* grid-row: 1 / 2; */
+      }
+
+      .nav {
+        grid-column: 1 / 3;
+        /* grid-row: 2 / 3; */
+      }
+
+
+      .content {
+        grid-column: 1 / 2;
+        /* grid-row: 3 / 4; */
+      }
+
+
+      .sidebar {
+        grid-column: 2 / 3;
+        /* grid-row: 3 / 4; */
+      }
+
+
+      .footer {
+        grid-column: 1 / 3;
+        /* grid-row: 4 / 5; */
+      }
+
+
+      &>* {
+        background-color: lightblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #999;
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">HEADER</header>
+    <nav class="nav">NAVIGATION MENU</nav>
+    <main class="content">CONTENT</main>
+    <aside class="sidebar">SIDEBAR</aside>
+    <footer class="footer">FOOTER</footer>
+  </div>
+  <form>
+    <input type="" name="" value="">
+    <button></button>
+  </form>
+</body>
+
+</html>
