@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Merriweather', sans-serif;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      line-height: inherit;
+    }
+
+    body {
+      display: flex;
+      width: 1600px;
+      height: 1200px;
+      padding: 217px 249px 218px 248px;
+      justify-content: center;
+      align-items: center;
+      background: #EBEBFF;
+
+      .container {
+        width: 1103px;
+        height: 765px;
+
+        border-radius: 36px;
+        background: #FFF;
+        box-shadow: 0 54px 90px -40px rgba(251, 132, 132, 0.25);
+
+        .warp {
+          padding: 120px;
+        }
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 40px;
+
+          .form-group {
+            display: inline-flex;
+            padding: 16px;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            border-radius: 8px;
+            border: 1px solid #C5C5F8;
+
+
+            input,
+            input:focus-visible {
+              border: none;
+              outline: none;
+              color: #0E0D46;
+              font-family: Roboto;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              opacity: 0.6;
+            }
+
+            img {
+              width: 27px;
+              height: 27px;
+            }
+
+          }
+
+        }
+
+        .notification {
+          display: flex;
+          align-items: center;
+
+
+          .inner-bell {
+            margin-right: 34px;
+
+            img {
+              width: 36px;
+              height: 36px;
+              stroke-width: 2.25px;
+              stroke: #0E0D46;
+            }
+          }
+
+          .inner-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 72px;
+            height: 72px;
+            background: #8598FC;
+
+            color: #FFF;
+            text-align: center;
+
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+
+        h1 {
+          color: #0E0D46;
+          font-family: Merriweather;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 28px;
+        }
+
+        .account {
+
+
+          .box {
+            width: 857px;
+            height: 112px;
+            border-radius: 24px;
+
+            padding: 20px;
+            margin-bottom: 8px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+
+            .inner-account {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+
+              .inner-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 72px;
+                height: 72px;
+                background: #FFF;
+                border-radius: 50%;
+                margin-right: 16px;
+              }
+
+              .inner-text h2 {
+                color: #0E0D46;
+                font-family: Merriweather;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+              }
+
+              .inner-text a {
+                color: #0E0D46;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                opacity: 0.7;
+                text-decoration: none;
+              }
+            }
+
+            .inner-des {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              p {
+                color: #0E0D46;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+            }
+
+
+            .inner-detail {
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+
+              img {
+                width: 40px;
+                height: 40px;
+
+                border-radius: 40px;
+                background: #FFF;
+
+              }
+            }
+          }
+
+          .box:hover {
+            background: #FAF2FE;
+          }
+        }
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="warp">
+      <div class="header">
+        <form action="" class="form-group">
+          <img src="./image/Frame (7).png" alt="search">
+          <input class="form-control" placeholder="search" type="text">
+        </form>
+        <div class="notification">
+          <div class="inner-bell">
+            <img src="./image/Frame (6).png" alt="bell">
+          </div>
+          <div class="inner-logo">IG</div>
+        </div>
+      </div>
+
+      <h1>Accounts</h1>
+
+      <div class="account">
+
+        <div class="box">
+          <div class="inner-account">
+
+            <div class="inner-img">
+              <img src="./image/image 1.png" alt="">
+            </div>
+            <div class="inner-text">
+              <h2 class="inner-title">Dropbox</h2>
+              <a class="inner-link" href="">dropbox.com</a>
+            </div>
+          </div>
+
+          <div class="inner-des">
+            <p>24 accounts</p>
+          </div>
+
+          <div class="inner-detail">
+            <img src="./image/Group 5.png" alt="">
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="inner-account">
+
+            <div class="inner-img">
+              <img src="./image/image 2.png" alt="">
+            </div>
+            <div class="inner-text">
+              <h2 class="inner-title">Pinterest</h2>
+              <a class="inner-link" href="">pinterest.com</a>
+            </div>
+          </div>
+
+          <div class="inner-des">
+            <p>3 accounts</p>
+          </div>
+
+          <div class="inner-detail">
+            <img src="./image/Group 5.png" alt="">
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="inner-account">
+
+            <div class="inner-img">
+              <img src="./image/image 3.png" alt="">
+            </div>
+            <div class="inner-text">
+              <h2 class="inner-title">Microsoft</h2>
+              <a class="inner-link" href="">microsoft.com</a>
+            </div>
+          </div>
+
+          <div class="inner-des">
+            <p>19 accounts</p>
+          </div>
+
+          <div class="inner-detail">
+            <img src="./image/Group 5.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+</body>
+
+</html>
