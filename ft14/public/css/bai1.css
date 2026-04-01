@@ -37,6 +37,14 @@
     .menu-links li {
       list-style: none;
       margin-right: 52px;
+      position: relative;
+    }
+
+    .menu-links a:hover {
+      border-bottom: 2px solid #1F1D2A;
+      padding-bottom: 2px;
+      border-radius: 2px;
+
     }
 
     .menu-links a {
@@ -56,6 +64,12 @@
       border: 1px solid var(--color-text);
       color: var(--color-text);
       text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn-signin:hover {
+
+      background: #5d7452;
     }
   }
 
@@ -95,10 +109,28 @@
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn-get-started:hover {
+      width: 170px;
+      height: 70px;
+      border-radius: 6px;
+      background: #5d7452;
+      color: var(--color-text);
+      border: 1px solid transparent;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      cursor: pointer;
+      border: 1px solid var(--color-text);
     }
 
     .hero-visual {
       position: relative;
+      cursor: pointer;
 
       .main-avatar img {
         width: 500px;
@@ -122,6 +154,7 @@
       background-position: center;
       top: 210px;
       right: -40px;
+      cursor: pointer;
     }
 
     .hero-visual .review-card {
@@ -133,6 +166,7 @@
       padding: 20px;
       top: 401px;
       right: 290px;
+      cursor: pointer;
     }
 
     .hero-visual p {
@@ -184,6 +218,7 @@
       width: 100px;
       height: 30px;
       margin: 0 60px;
+      cursor: pointer;
     }
   }
 
@@ -214,7 +249,8 @@
     svg {
       position: absolute;
       bottom: 4px;
-      right: 518px;
+      right: 536px;
+
       z-index: -1;
     }
 
@@ -229,12 +265,14 @@
       background: #FFF;
       border-radius: 20px;
       overflow: hidden;
+      cursor: pointer;
     }
 
     .instructor-grid img {
       object-fit: cover;
       width: 295px;
       height: 350px;
+
     }
 
     .card-body {
