@@ -10,13 +10,24 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background: linear-gradient(293deg, #E6E6E4 7.23%, #F0E8E2 97.74%);
+}
+
+.background {
+
+  background-image: url(../img/group16.png);
+  background-repeat: no-repeat;
+
+}
+
 .container {
-  width: 1512px;
+  max-width: 1512px;
+  width: 100%;
   height: 1708px;
   min-width: 100vw;
 
   padding: 40px 100px 120px;
-  background: linear-gradient(293deg, #E6E6E4 7.23%, #F0E8E2 97.74%);
 
   .navbar {
     display: flex;
@@ -40,7 +51,7 @@
       position: relative;
     }
 
-    .menu-links a:hover {
+    .menu-links a:active {
       border-bottom: 2px solid #1F1D2A;
       padding-bottom: 2px;
       border-radius: 2px;
@@ -52,6 +63,12 @@
       color: var(--color-text);
       font-size: 16px;
       font-weight: 400;
+    }
+
+    .menu-links .active {
+      border-bottom: 2px solid #1F1D2A;
+      padding-bottom: 2px;
+      border-radius: 2px;
     }
 
     .btn-signin {
@@ -114,17 +131,7 @@
     }
 
     .btn-get-started:hover {
-      width: 170px;
-      height: 70px;
-      border-radius: 6px;
       background: #5d7452;
-      color: var(--color-text);
-      border: 1px solid transparent;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      cursor: pointer;
       border: 1px solid var(--color-text);
     }
 
@@ -152,8 +159,10 @@
       background-image: url('../img/Polygon.png');
       background-repeat: no-repeat;
       background-position: center;
-      top: 210px;
-      right: -40px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      right: -80px;
       cursor: pointer;
     }
 
@@ -165,6 +174,7 @@
       background: #FFF;
       padding: 20px;
       top: 401px;
+
       right: 290px;
       cursor: pointer;
     }
@@ -187,12 +197,12 @@
     .hero-visual .icon {
       display: flex;
       margin-top: 19px;
+      gap: 2px;
     }
 
     .hero-visual img {
       width: 24px;
       height: 24px;
-      margin-right: 2px;
     }
   }
 
@@ -212,12 +222,12 @@
     .logo-cloud {
       display: flex;
       justify-content: center;
+      gap: 60px
     }
 
     img {
       width: 100px;
       height: 30px;
-      margin: 0 60px;
       cursor: pointer;
     }
   }
@@ -246,17 +256,25 @@
       margin-bottom: 100px;
     }
 
-    svg {
-      position: absolute;
-      bottom: 4px;
-      right: 536px;
 
-      z-index: -1;
+    .career-strong {
+      position: relative;
     }
+
+    .career-strong::before {
+      content: '';
+      position: absolute;
+      bottom: 3px;
+      z-index: -1;
+      width: 100%;
+      background-color: #96C67F;
+      height: 6px;
+    }
+
 
     .instructor-grid {
       display: flex;
-      justify-content: space-between;
+      gap: 30px;
     }
 
     .instructor-card {
