@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'BeaufortforLOL-Bold', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      min-width: 1440px;
+      width: 100%;
+    }
+
+    .main-banner {
+      margin-bottom: 32px;
+    }
+
+    .main-banner img,
+    .bottom-banner img {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      display: block;
+    }
+
+    .navbar {
+      text-align: center;
+      margin-bottom: 60px;
+
+      .logo img {
+        width: 240px;
+        height: 105.8px;
+
+        margin-bottom: 32px;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+      }
+
+      .nav-links a {
+        color: #000;
+        text-decoration: none;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+
+
+
+    .content-wrapper {
+      width: 100%;
+    }
+
+    .champion-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    .champ-card {
+      border: 1px solid #eee;
+      overflow: hidden;
+      cursor: pointer;
+      width: 100%;
+
+    }
+
+    .img-box img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .champ-name {
+      background-color: #0E4C67;
+      height: 80px;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: BeaufortforLOL-Bold;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+    }
+
+
+    .main-footer {
+      background-color: #0E4C67;
+      color: white;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .footer-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer-actions input {
+      background: #0E4C67;
+      border: 1px solid #FFA800;
+      padding: 8px 15px;
+      color: white;
+      width: 250px;
+    }
+
+    .footer-actions input::placeholder {
+      color: white;
+    }
+
+    .btn-play {
+      background: #FFA800;
+      border: none;
+      padding: 8px 20px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #fff;
+    }
+
+
+    @media (max-width: 1024px) {
+      .champion-grid {
+        grid-template-columns: repeat(3, 328px);
+
+      }
+
+      .nav-links {
+        gap: 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .champion-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+      }
+
+      .champ-card {
+        width: 100%;
+
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .champ-name {
+        font-size: 12px;
+        padding: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="main-banner">
+    <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 44.jpg" alt="Top Banner">
+  </header>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 20.png" alt="League of Legends">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Game</a></li>
+      <li><a href="#">Champions</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Patch Notes</a></li>
+      <li><a href="#">Discover</a></li>
+      <li><a href="#">Esports</a></li>
+      <li><a href="#">Universe</a></li>
+    </ul>
+  </nav>
+
+  <main class="content-wrapper">
+
+    <div class="champion-grid">
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 31.jpg" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 32.png" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 33.png" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 34.png" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 35.png" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 36.png" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 37.png" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 38.png" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 39.png" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 40.png" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 41.png" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+      <div class="champ-card">
+        <div class="img-box">
+          <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 42.png" alt="Ahri">
+        </div>
+        <div class="champ-name">AHRI</div>
+      </div>
+
+
+    </div>
+
+    <div class="bottom-banner">
+      <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 43.png" alt="Bottom Banner">
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2021 All Rights Reserved</p>
+    <div class="footer-actions">
+      <input type="email" placeholder="Email Address">
+      <button class="btn-play">Play For Free</button>
+    </div>
+  </footer>
+</body>
+
+</html>
