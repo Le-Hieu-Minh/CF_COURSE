@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
   <title>Document</title>
   <style>
     * {
@@ -15,19 +16,22 @@
 
     body {
       background-color: #fff;
-      min-width: 1440px;
+      max-width: 100%;
       width: 100%;
     }
 
     .main-banner {
       margin-bottom: 32px;
+      max-width: 100%;
+      width: 100%;
     }
 
     .main-banner img,
     .bottom-banner img {
+      max-width: 100%;
+      width: 100%;
       display: flex;
       justify-content: center;
-      width: 100%;
       display: block;
     }
 
@@ -36,9 +40,9 @@
       margin-bottom: 60px;
 
       .logo img {
-        width: 240px;
+        max-width: 240px;
+        width: 100%;
         height: 105.8px;
-
         margin-bottom: 32px;
       }
 
@@ -47,6 +51,8 @@
         display: flex;
         justify-content: center;
         gap: 32px;
+        min-width: 100%;
+        width: 100%;
       }
 
       .nav-links a {
@@ -66,10 +72,11 @@
     }
 
     .champion-grid {
+      max-width: 100%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 32px;
-      margin-bottom: 40px;
+      margin-bottom: 64px;
     }
 
     .champ-card {
@@ -77,13 +84,30 @@
       overflow: hidden;
       cursor: pointer;
       width: 100%;
+      max-width: 100%;
 
     }
 
-    .img-box img {
+    .img-box {
+      max-width: 100%;
+
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+
+    .bottom-banner {
+      margin-bottom: 73px;
       width: 100%;
-      object-fit: cover;
-      display: block;
+
+      iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+      }
     }
 
     .champ-name {
@@ -93,7 +117,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: BeaufortforLOL-Bold;
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
@@ -103,18 +126,18 @@
 
 
     .main-footer {
+
       background-color: #0E4C67;
       color: white;
-      padding: 15px 50px;
+      padding: 24px 23px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 20px;
     }
 
     .footer-actions {
       display: flex;
-      gap: 10px;
+      gap: 24px;
     }
 
     .footer-actions input {
@@ -122,7 +145,10 @@
       border: 1px solid #FFA800;
       padding: 8px 15px;
       color: white;
-      width: 250px;
+      stroke-width: 2px;
+      width: 278px;
+      height: 50px;
+      border-radius: 2px;
     }
 
     .footer-actions input::placeholder {
@@ -132,25 +158,56 @@
     .btn-play {
       background: #FFA800;
       border: none;
-      padding: 8px 20px;
+      padding: 15px;
       font-weight: bold;
       cursor: pointer;
       color: #fff;
+      border-radius: 5px;
     }
 
 
     @media (max-width: 1024px) {
+
+      .main-banner img,
+      .bottom-banner img {
+        min-width: 100%;
+        width: 100%;
+      }
+
       .champion-grid {
-        grid-template-columns: repeat(3, 328px);
+        grid-template-columns: repeat(3, 1fr);
+        min-width: 100%;
 
       }
 
       .nav-links {
-        gap: 15px;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 992px) {
+
+      .main-banner img,
+      .bottom-banner img {
+        min-width: 100%;
+        width: 100%;
+      }
+
+      .champion-grid {
+        grid-template-columns: repeat(3, 1fr);
+        min-width: 100%;
+        width: 100%;
       }
     }
 
     @media (max-width: 768px) {
+
+      .main-banner img,
+      .bottom-banner img {
+        min-width: 100%;
+        width: 100%;
+      }
+
       .champion-grid {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
@@ -199,84 +256,90 @@
   <main class="content-wrapper">
 
     <div class="champion-grid">
+
       <div class="champ-card">
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 31.jpg" alt="Ahri">
         </div>
         <div class="champ-name">AHRI</div>
       </div>
+
       <div class="champ-card">
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 32.png" alt="Ahri">
         </div>
-        <div class="champ-name">AHRI</div>
+        <div class="champ-name">AKALI</div>
       </div>
       <div class="champ-card">
+
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 33.png" alt="Ahri">
         </div>
-        <div class="champ-name">AHRI</div>
+        <div class="champ-name">AZIR</div>
       </div>
       <div class="champ-card">
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 34.png" alt="Ahri">
         </div>
-        <div class="champ-name">AHRI</div>
+        <div class="champ-name">CAITLYN</div>
       </div>
       <div class="champ-card">
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 35.png" alt="Ahri">
         </div>
-        <div class="champ-name">AHRI</div>
+        <div class="champ-name">DARIUS</div>
       </div>
       <div class="champ-card">
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 36.png" alt="Ahri">
         </div>
-        <div class="champ-name">AHRI</div>
+        <div class="champ-name">FIZZ</div>
       </div>
       <div class="champ-card">
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 37.png" alt="Ahri">
         </div>
-        <div class="champ-name">AHRI</div>
+        <div class="champ-name">IRELIA</div>
       </div>
       <div class="champ-card">
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 38.png" alt="Ahri">
         </div>
-        <div class="champ-name">AHRI</div>
+        <div class="champ-name">JINX</div>
       </div>
       <div class="champ-card">
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 39.png" alt="Ahri">
         </div>
-        <div class="champ-name">AHRI</div>
+        <div class="champ-name">RENGAR</div>
       </div>
       <div class="champ-card">
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 40.png" alt="Ahri">
         </div>
-        <div class="champ-name">AHRI</div>
+        <div class="champ-name">SERAPHINE</div>
       </div>
       <div class="champ-card">
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 41.png" alt="Ahri">
         </div>
-        <div class="champ-name">AHRI</div>
+        <div class="champ-name">YASUO</div>
       </div>
       <div class="champ-card">
         <div class="img-box">
           <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 42.png" alt="Ahri">
         </div>
-        <div class="champ-name">AHRI</div>
+        <div class="champ-name">WUKONG</div>
       </div>
 
 
     </div>
 
     <div class="bottom-banner">
-      <img src="./Lab3_LienMinhHuyenThoai (Copy)/image 43.png" alt="Bottom Banner">
+      <iframe src="https://www.youtube.com/embed/O4PDzBnBMU4"
+        title="Xayah and Rakan: Wild Magic | New Champion Teaser - League of Legends" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </main>
 

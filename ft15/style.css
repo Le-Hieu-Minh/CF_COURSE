@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'BeaufortforLOL-Bold', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  max-width: 100%;
+  width: 100%;
+}
+
+.main-banner {
+  margin-bottom: 32px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.main-banner img,
+.bottom-banner img {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  display: block;
+}
+
+.navbar {
+  text-align: center;
+  margin-bottom: 60px;
+
+  .logo img {
+    max-width: 240px;
+    width: 100%;
+    height: 105.8px;
+    margin-bottom: 32px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+
+
+.content-wrapper {
+  width: 100%;
+}
+
+.champion-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.champ-card {
+  border: 1px solid #eee;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+
+}
+
+.img-box {
+  max-width: 100%;
+
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+
+.bottom-banner {
+  margin-bottom: 73px;
+  width: 100%;
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.champ-name {
+  background-color: #0E4C67;
+  height: 80px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+
+.main-footer {
+
+  background-color: #0E4C67;
+  color: white;
+  padding: 24px 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-actions {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-actions input {
+  background: #0E4C67;
+  border: 1px solid #FFA800;
+  padding: 8px 15px;
+  color: white;
+  stroke-width: 2px;
+  width: 278px;
+  height: 50px;
+  border-radius: 2px;
+}
+
+.footer-actions input::placeholder {
+  color: white;
+}
+
+.btn-play {
+  background: #FFA800;
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 1024px) {
+
+  .main-banner img,
+  .bottom-banner img {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .champion-grid {
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 100%;
+
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .main-banner img,
+  .bottom-banner img {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .champion-grid {
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .main-banner img,
+  .bottom-banner img {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .champion-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+
+  }
+
+  .champ-card {
+    width: 100%;
+
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .champ-name {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
