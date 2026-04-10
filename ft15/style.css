@@ -53,6 +53,28 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    position: relative;
+    display: block;
+    height: 25px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: 0;
+      border: 2px solid transparent;
+      border-radius: 0.625rem;
+      transition: all ease-in-out 0.3s;
+    }
+
+    &:hover::after {
+      width: 110%;
+      border-color: #000;
+    }
+
   }
 }
 
