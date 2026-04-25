@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=typography,forms,aspect-ratio"></script>
+
+
+  <style type="text/tailwindcss">
+    @theme {
+                --font-primary: 'Poppins', sans-serif;
+                --color-primary: #281a51;
+            }
+    @layer base {
+
+      input {@apply outline-none; }
+                html {
+                    font-family: var(--font-primary);
+                    color: var(--color-primary);
+                    @apply text-base;
+                }
+
+                body {
+                    @apply flex justify-center items-center bg-[#f7f4ff] min-h-[100vh];
+                }
+              
+            }
+
+      @layer components {
+                .flex-align-center {
+                    @apply flex items-center;
+                }
+        
+                .cat-card {
+                    @apply flex w-[112px] p-6 items-center gap-1 rounded-lg cursor-pointer flex-col  mb-4;
+                    @apply transition-all duration-700 ease-out;
+                    &:hover {
+                        @apply border-[#dbd5ec] -translate-y-3;
+                        @apply shadow-[0_14px_16px_0_rgba(41,11,128,0.1)];
+                    }
+                }
+            }
+      
+    </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <main
+    class="search-card bg-white shadow-[0_14px_52px_-20px_#8675B4] rounded-[24px] p-[72px] relative w-[640px] 
+    after:content-[''] after:absolute after:w-[421px] after:h-[613px] after:rounded-[31px] after:bg-[#EFEBFD] after:-top-[75px] after:left-[110px] after:-z-[1]">
+    <header class="toolbar flex justify-between items-center mb-8 cursor-pointer">
+      <form class="search-wrapper p-4 flex  items-center gap-[10px] rounded border border-solid border-[#DBD5EC]">
+        <img class="w-[22px] h-[22px] flex-shrink-0 opacity-55 ou" src="./img/Frame (17).png" alt="search">
+        <input class="p-0 placeholder:text-[rgba(40, 26, 81, 0.54)] border-none focus:outline-none" type="text"
+          placeholder="Search for a part-time job">
+      </form>
+      <div class="map inline-flex p-4 items-center gap-[10px] rounded bg-[#281A51] hover:bg-[#CA1628]">
+        <img class="w-[22px] h-[22px]" src="./img/Frame (8).png" alt="map">
+        <span class="text-white text-base">Use map</span>
+      </div>
+    </header>
+
+    <section class="category-grid flex flex-wrap justify-between">
+      <div class="cat-card bg-[#FFECEC]">
+        <img src="./img/Frame (9).png" alt="Furniture">
+        <span class="label">Furniture</span>
+      </div>
+      <div class="cat-card bg-[#F7ECFF]">
+        <img src="./img/Frame (10).png" alt="Property">
+        <span class="label">Property</span>
+      </div>
+      <div class="cat-card bg-[#ECF0FF]">
+        <img src="./img/Frame (11).png" alt="Job">
+        <span class="label">Job</span>
+      </div>
+      <div class="cat-card bg-[#D7F9F3]">
+        <img src="./img/Frame (12).png" alt="Travel">
+        <span class="label">Travel</span>
+      </div>
+      <div class="cat-card bg-[#E2FFD4]">
+        <img src="./img/Frame (13).png" alt="Boat">
+        <span class="label">Boat</span>
+      </div>
+      <div class="cat-card bg-[#FFFFFF]">
+        <img src="./img/Frame (14).png" alt="MC">
+        <span class="label">MC</span>
+      </div>
+      <div class="cat-card bg-[#FFF3C9] ">
+        <img src="./img/Frame (15).png" alt="Economy">
+        <span class="label">Economy</span>
+      </div>
+      <div class="cat-card bg-[#FFD9C9]">
+        <img src="./img/Frame (16).png" alt="Holiday">
+        <span class="label">Holiday</span>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

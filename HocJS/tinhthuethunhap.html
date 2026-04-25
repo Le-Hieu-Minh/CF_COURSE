@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    function taxSalary(salary) {
+
+      if (isNaN(salary) || salary < 0) {
+        console.log("Thu nhập không hợp lệ");
+        return 0;
+      }
+
+      let tax = 0;
+
+      if (salary > 80000000) {
+        return tax += 14000000 * 0.05 + 25000000 * 0.1 + 30000000 * 0.2 + (salary - 80000000) * 0.3;
+      }
+
+      if (salary > 50000000) {
+        return tax += 14000000 * 0.05 + 25000000 * 0.1 + (salary - 50000000) * 0.2;
+
+      }
+
+      if (salary > 25000000) {
+        return tax += 14000000 * 0.05 + (salary - 25000000) * 0.1;
+
+      }
+
+      if (salary > 11000000) {
+        return tax += (salary - 11000000) * 0.05;
+      }
+
+
+    }
+
+    console.log(taxSalary(15000000));
+    console.log(taxSalary(30000000));
+    console.log(taxSalary(100000000));
+    console.log(taxSalary("dsfsfhs"));
+
+
+
+
+  </script>
+</body>
+
+</html>
